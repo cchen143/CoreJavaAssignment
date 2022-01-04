@@ -1,6 +1,6 @@
 
 public class Q3 {
-	public String reverse(String s) {
+	public static String reverse(String s) {
 		char[] ch = s.toCharArray();
 		int start = 0, end = ch.length - 1;
 		

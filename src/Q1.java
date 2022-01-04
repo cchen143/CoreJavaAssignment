@@ -1,6 +1,6 @@
 
 public class Q1 {
-	public int[] bubbleSort(int[] arr) {
+	public static int[] bubbleSort(int[] arr) {
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = i; j < arr.length - 1; j++) {
 				if (arr[j] > arr[j + 1]) {
