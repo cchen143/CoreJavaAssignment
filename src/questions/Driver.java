@@ -1,3 +1,4 @@
+package questions;
 import java.util.*;
 
 public class Driver {
@@ -71,12 +72,10 @@ public class Driver {
 		System.out.println(Arrays.toString(palindromes.toArray(new String[palindromes.size()])));
 		
 		//Q9
-		System.out.println(Arrays.toString(Q9.findPrimes(temp).toArray(new Integer [nums.size()])));
+		System.out.println(Arrays.toString(Q9.findPrimes(temp).toArray(new Integer [temp.size()])));
 		
 		//Q10
 		System.out.println("Minimun of " + -2 + " and " + 3 + " : " + Q10.min(-2, 3));
-		
-		
 		
 	}
 

@@ -1,4 +1,4 @@
-
+package questions;
 public class Q2 {
 	public static int fib(int n) {
 		int prev = 0, curr = 1;

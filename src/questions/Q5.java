@@ -1,4 +1,4 @@
-
+package questions;
 public class Q5 {
 	public static String subString(String s, int idx) {
 		if (idx >= s.length()) return s;

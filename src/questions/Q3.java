@@ -1,4 +1,4 @@
-
+package questions;
 public class Q3 {
 	public static String reverse(String s) {
 		char[] ch = s.toCharArray();

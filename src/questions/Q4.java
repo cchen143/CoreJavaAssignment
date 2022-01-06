@@ -1,4 +1,4 @@
-
+package questions;
 public class Q4 {
 	public static int factorial(int n) {
 		if (n == 0) return 1;
