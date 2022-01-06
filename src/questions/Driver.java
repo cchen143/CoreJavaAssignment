@@ -5,23 +5,29 @@ public class Driver {
 	public static void main(String[] args) {
 		
 		//Q1
+		System.out.println("\nQ1:\n");
 		System.out.println(Arrays.toString(Q1.bubbleSort(new int[] {1,0,5,6,3,2,3,7,9,8,4})));
 		
 		//Q2
+		System.out.println("\nQ2:\n");
 		Q2.fib(25);
 		
 		//Q3
+		System.out.println("\nQ3:\n");
 		System.out.println(Q3.reverse("reverse"));
 		
 		//Q4
+		System.out.println("\nQ4:\n");
 		System.out.println(Q4.factorial(5));
 		
 		//Q5
+		System.out.println("\nQ5:\n");
 		System.out.println(Q5.subString("reverse", 0));
 		System.out.println(Q5.subString("reverse", 2));
 		System.out.println(Q5.subString("reverse", 10));
 		
 		//Q6
+		System.out.println("\nQ6:\n");
 		for (int i = -3; i < 3; i++) {
 			System.out.println(i + ": " + Q6.isEven(i));
 		}
@@ -34,7 +40,7 @@ public class Driver {
 		}
 		
 		//Q7
-		
+		System.out.println("\nQ7:\n");
 		List<Employee> el = new ArrayList<>();
 		 
         Employee e1 = new Employee("abc", "A", 27);
@@ -63,7 +69,7 @@ public class Driver {
         }
 		
 		//Q8
-		
+        System.out.println("\nQ8:\n");
 		List<String> strings = new ArrayList<>();
 		List<String> palindromes = new ArrayList<>();
 		
@@ -72,10 +78,38 @@ public class Driver {
 		System.out.println(Arrays.toString(palindromes.toArray(new String[palindromes.size()])));
 		
 		//Q9
+		System.out.println("\nQ9:\n");
 		System.out.println(Arrays.toString(Q9.findPrimes(temp).toArray(new Integer [temp.size()])));
 		
 		//Q10
+		System.out.println("\nQ10:\n");
 		System.out.println("Minimun of " + -2 + " and " + 3 + " : " + Q10.min(-2, 3));
+		
+		//Q11
+		System.out.println("\nQ11:\n");
+		Q11.run();
+		
+		//Q12
+		System.out.println("\nQ12:\n");
+		System.out.println(Arrays.toString(Q12.run()));
+		
+		//Q13
+		System.out.println("\nQ13:\n");
+		Q13.print();
+		
+		//Q14
+		System.out.println("\nQ14:\n");
+		Q14.run();
+		
+		//Q15
+		System.out.println("\nQ15:\n");
+		Q15 q15 = new Q15();
+		int x = 5 ,y = 4;
+		System.out.println("x = " + x + ", y = " + y + "\n");
+		System.out.println("x  +  y = " + q15.addition(x, y));
+		System.out.println("x  -  y = " + q15.subtraction(x, y));
+		System.out.println("x  *  y = " + q15.multiplication(x, y));
+		System.out.println("x  /  y = " + q15.division(x, y));
 		
 	}
 
