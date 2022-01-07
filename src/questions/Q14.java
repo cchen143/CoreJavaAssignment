@@ -4,8 +4,8 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Q14 {
-	public static void run() {
-		Scanner sc = new Scanner(System.in);
+	public static void run(Scanner sc) {
+		
 		while(true) {
 			System.out.println("Enter an option 1-3, q to quit: ");
 			String s = sc.nextLine();
@@ -28,6 +28,5 @@ public class Q14 {
 				break;
 			}
 		}
-		sc.close();
 	}
 }

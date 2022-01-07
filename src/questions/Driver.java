@@ -2,8 +2,10 @@ package questions;
 import java.util.*;
 
 public class Driver {
+	
 	public static void main(String[] args) {
 		
+		Scanner sc = new Scanner(System.in);
 		//Q1
 		System.out.println("\nQ1:\n");
 		System.out.println(Arrays.toString(Q1.bubbleSort(new int[] {1,0,5,6,3,2,3,7,9,8,4})));
@@ -79,7 +81,8 @@ public class Driver {
 		
 		//Q9
 		System.out.println("\nQ9:\n");
-		System.out.println(Arrays.toString(Q9.findPrimes(temp).toArray(new Integer [temp.size()])));
+		//list.toString()
+		System.out.println(Q9.findPrimes(temp));
 		
 		//Q10
 		System.out.println("\nQ10:\n");
@@ -99,7 +102,7 @@ public class Driver {
 		
 		//Q14
 		System.out.println("\nQ14:\n");
-		Q14.run();
+		Q14.run(sc);
 		
 		//Q15
 		System.out.println("\nQ15:\n");
@@ -111,6 +114,34 @@ public class Driver {
 		System.out.println("x  *  y = " + q15.multiplication(x, y));
 		System.out.println("x  /  y = " + q15.division(x, y));
 		
-	}
+		//Q16
+		System.out.println("\nQ16:\n");
+		if (args.length != 1) System.out.println(("Wrong input."));
+		else System.out.println(Q16.lengthOfString(args[0]));
+		
+		//Q17
+		System.out.println("\nQ17:\n");
+		Q17.simpleInterest(sc);
+		
+		//Q18
+		System.out.println("\nQ18:\n");
+		Q18 q18 = new Q18();
+		System.out.println(q18.hasUppercase("babsjaGma"));
+		System.out.println(q18.toUppercase("babsjaGma"));
+		q18.addTen("20");
+		
+		//Q19
+		System.out.println("\nQ19:\n");
+		Q19.run();
+		
+		//Q20
+		System.out.println("\nQ20:\n");
+		Q20.printData();
+		
+		sc.close();
+		
+		
+		
+		}
 
 }
